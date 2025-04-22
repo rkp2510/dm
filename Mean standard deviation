@@ -1,0 +1,36 @@
+import numpy as np
+
+# Sample data
+data = [10, 20, 30, 40, 50]
+
+
+# Using numpy module
+mean_numpy = np.mean(data)
+std_dev_numpy = np.std(data, ddof=1)  # Sample standard deviation
+
+
+print("Using numpy module:")
+print(f"Mean: {mean_numpy}")
+print(f"Standard Deviation: {std_dev_numpy}")
+
+
+
+
+
+// Another Program
+import pandas as pd
+import numpy as np
+from scipy import stats
+data = {
+"Values": [12, 15, 14, 16, 12, 15, 14, 14, 13, 16, 17, 14, 14, 12, 15, 14,
+13, 17, 12, 16]
+}
+df = pd.DataFrame(data)
+mean_value = df["Values"].mean()
+median_value = df["Values"].median()
+# mode_value = stats.mode(df["Values"])[0][0]
+std_dev = df["Values"].std()
+print(f"Mean: {mean_value}")
+print(f"Median: {median_value}")
+# print(f"Mode: {mode_value}")
+print(f"Standard Deviation: {std_dev}")
